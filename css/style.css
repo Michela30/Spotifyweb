@@ -18,43 +18,79 @@ ASIDE
 
 /* 
 --------------------------------
-CENTRALE MAIN
+CENTRAL MAIN
 --------------------------------
 */
 .central-main {
     width: 85%;
 }
 
+.central-main .upgrade-section{
+    background-color: rgba(0,0,0,0.7);
+    height: 3.75rem;
+    position: sticky;
+    top: 0;
+}
+
+.upgrade-section{
+    position: relative;
+    
+}
+.upgrade-section a{
+    position: absolute;
+    top: .625rem;
+    right: .3125rem;
+}
 .central-main header nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .central-main header nav ul li{
     display: inline-block;
     list-style: none;
-    padding: .625rem 1.875rem;
+    padding: .625rem .625rem;
 }
 
 .central-main header nav ul li > a{
    text-decoration: none;
    color: white;
+   text-transform: uppercase;
 }
 
 .music-container{
     display: flex;
     flex-wrap: wrap;
+   
 }
 
 .music-box{
     width: calc(85% / 6);
-    margin: 10px 10px;
+    margin: .625rem .625rem;
 }
 
 .music-box img{
     width: 100%
 }
+.circle-box{
+    padding-bottom: 100px;
+}
+.circle-box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
+
+.title-section{
+    margin: .625rem .625rem;
+    padding-top: 20px;
+}
+
+.title-section >*{
+    padding: 5px 0;
+}
 
 /* 
 FOOTER
@@ -79,10 +115,12 @@ footer{
 /* 
 DEBUG
 */
-.debug main .upgrade-section{
+/* .debug main .upgrade-section{
     background-color: brown;
-    height: 50px;
-}
+    height: 60px;
+    position: sticky;
+    top: 0;
+} */
 
 .debug .central-main{
     background-color: aquamarine;
@@ -91,10 +129,10 @@ DEBUG
     background-color: blueviolet;
     width: 15%;
     height: 100%;
-    float: left;
     position: sticky;
     top: 0;
     left: 0;
+    bottom: 0;
 }
 
 .debug footer{
@@ -104,13 +142,12 @@ DEBUG
 .debug .central-main header nav ul li > a{
     color: black;
  }
-
+/* 
 .debug .music-box{
     background-color: coral;
     border: 2px solid black;
     height: 150px;
-}
-
+} */
 
 
 
@@ -136,13 +173,17 @@ MEDIA QUERY da Desktop first
 /* Tablet */
 
 @media screen and (max-width: 1100px){
-
+    .music-box{
+        width: calc(85% / 4);
+    }
 }
 
 
 /* Mobile */
 @media screen and (max-width: 700px){
-    
+    .music-box{
+        width: calc(85% / 2);
+    }
 }
 
 /* Mobile piccolo */

@@ -8,3 +8,21 @@
     margin: 0 auto;
     max-width: 1200px;
 }
+
+.text-center{
+    text-align: center;
+}
+
+p{
+    font-size: small;
+}
+
+.upgrade-section a{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: .625rem 1.25rem;
+    font-size: 0.7em;
+    border-radius: 2.5rem;
+}
