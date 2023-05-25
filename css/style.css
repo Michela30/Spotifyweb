@@ -23,6 +23,7 @@ CENTRAL MAIN
 */
 .central-main {
     width: 85%;
+    background-color: #141922;
 }
 
 .central-main .upgrade-section{
@@ -86,6 +87,7 @@ CENTRAL MAIN
 .title-section{
     margin: .625rem .625rem;
     padding-top: 20px;
+    color: white;
 }
 
 .title-section >*{
@@ -97,15 +99,58 @@ FOOTER
 */
 
 footer{
-    height: 3.75rem;
+    height: 4.375rem;
     position: sticky;
     bottom: 0;
+    color: white;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
+.footer-img{
+    margin: .3125rem .625rem;
+    width: 3.125rem;
+    height: 3.125rem;
+}
 
+.footer-img img{
+    width: 100%;
+}
 
+.footer-section > div{
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.footer-left a{
+    text-decoration: none;
+    font-size: 0.5em;
+    color: white; 
+}
+
+.footer-left h6,a{
+   line-height: 0;
+   padding-top: .625rem;
+   padding-right: 2.5rem;
+}
+
+.footer-section span{
+    padding-right: .625rem;
+}
+
+hr{
+    margin-top: 20px;
+ 
+}
+
+.footer-central{
+    padding-top: .3125rem;
+}
 
 
 
@@ -122,9 +167,9 @@ DEBUG
     top: 0;
 } */
 
-.debug .central-main{
+/* .debug .central-main{
     background-color: aquamarine;
-}
+} */
 .debug aside{
     background-color: blueviolet;
     width: 15%;
@@ -139,9 +184,9 @@ DEBUG
     background-color: blue;
 }
 
-.debug .central-main header nav ul li > a{
+/* .debug .central-main header nav ul li > a{
     color: black;
- }
+ } */
 /* 
 .debug .music-box{
     background-color: coral;
