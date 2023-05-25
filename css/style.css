@@ -15,6 +15,65 @@ ASIDE
     display: flex;
     justify-content: space-between;
 }
+.logo-spotify img{
+    width: 70%;
+    padding-top: .625rem;
+    padding-left: .625rem;
+}
+
+.aside-up-link img{
+    width: 20%;
+    padding-left: .625rem;
+
+}
+
+.aside-up-link img,span{
+    vertical-align: middle;
+}
+.playlist{
+    padding-bottom: 105px;
+}
+.playlist :not(i){
+    padding-bottom: .625rem;
+    padding-left: .9375rem;
+} 
+.section-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-down img{
+    width: 10%;
+}
+
+.aside-down img,small{
+    vertical-align: middle;
+}
+.download{
+    padding-left: .625rem;
+    padding-bottom: 0;
+}
+.profile .name{
+    display: inline-block;
+}
+
+.profile img{
+    margin-left: .625rem;
+}
+
+
+.profile img{
+    background-color: #A3A3A3;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+}
+
+.profile{
+    padding-top: .625rem;
+}
+
 
 /* 
 --------------------------------
@@ -113,7 +172,7 @@ footer{
 
 
 .footer-img{
-    margin: .3125rem .625rem;
+    margin: .625rem .625rem;
     width: 3.125rem;
     height: 3.125rem;
 }
