@@ -1,16 +1,132 @@
+@import url(reset.css);
+@import url(general.css);
+
 
 /* 
 MAIN
 */
 
 /* 
+--------------------------------
+ASIDE
+--------------------------------
+*/
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+--------------------------------
+CENTRALE MAIN
+--------------------------------
+*/
+.central-main {
+    width: 85%;
+}
+
+.central-main header nav {
+    display: flex;
+    justify-content: center;
+}
+
+.central-main header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: .625rem 1.875rem;
+}
+
+.central-main header nav ul li > a{
+   text-decoration: none;
+   color: white;
+}
+
+.music-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music-box{
+    width: calc(85% / 6);
+    margin: 10px 10px;
+}
+
+.music-box img{
+    width: 100%
+}
+
+
+/* 
 FOOTER
 */
+
+footer{
+    height: 3.75rem;
+    position: sticky;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* 
 DEBUG
 */
+.debug main .upgrade-section{
+    background-color: brown;
+    height: 50px;
+}
+
+.debug .central-main{
+    background-color: aquamarine;
+}
+.debug aside{
+    background-color: blueviolet;
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.debug footer{
+    background-color: blue;
+}
+
+.debug .central-main header nav ul li > a{
+    color: black;
+ }
+
+.debug .music-box{
+    background-color: coral;
+    border: 2px solid black;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 
