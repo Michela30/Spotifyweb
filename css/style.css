@@ -16,6 +16,10 @@ aside{
     height: calc(100vh - 4.375rem);
     position: sticky;
     top: 0;
+    color: white;
+}
+.logo-small{
+    display: none;
 }
 .logo-spotify img{
     width: 70%;
@@ -23,47 +27,77 @@ aside{
     padding-left: .625rem;
 }
 
-.aside-up-link img{
-    width: 20%;
-    padding-left: .625rem;
-
-}
-
-.playlist :not(i){
-    padding-bottom: .625rem;
+.aside-up, .aside-down{
     padding-left: .9375rem;
 }
+.aside-up-link img{
+    width: 10%;
+} 
 
-.aside-down img{
+.aside-up-link{
+    padding-top: .3125rem;
+}
+
+.aside-up-link a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+} 
+
+.playlist{
+    padding-top: .625rem;
+}
+
+.playlist a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+} 
+
+.playlist ul li{
+    list-style-type: none;
+    padding-top: .625rem;
+}
+
+.playlist > h5{
+    padding-bottom: .625rem;
+}
+
+.download-section img{
     width: 10%;
 }
 
-.aside-down img,small{
-    vertical-align: middle;
-}
-.download{
-    padding-left: .625rem;
-    padding-bottom: 0;
-    padding-top: 40px;
-}
-
-
 .profile img{
-    margin-left: .625rem;
-}
-
-
-.profile img{
+    width: 10%;
     background-color: #A3A3A3;
-    height: 1.25rem;
-    width: 1.25rem;
     border-radius: 50%;
 }
 
 .profile{
     padding-top: .625rem;
 }
+.profile > *{
+    vertical-align: middle;
+}
+.border{
+   border-left: 3px solid lawngreen;
+}
 
+.download-section a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+.download-section > *{
+   vertical-align: middle;
+}
+
+.download-section{
+    border-bottom: 2px solid white;
+    margin-right: .9375rem;
+    margin-top: 5.625rem;
+    padding-bottom: .625rem;
+}
 
 /*
 --------------------------------
@@ -95,6 +129,12 @@ CENTRAL MAIN
 .central-main header nav ul li{
     padding: .9375rem .3125rem;
     font-size: small;
+}
+
+hr{
+    color:  lawngreen;
+    width: 40px;
+    margin-left: 25px;
 }
 
 .central-main header nav ul li > a{
@@ -137,8 +177,12 @@ CENTRAL MAIN
     padding: 5px 0;
 }
 
+
+
 /*
+-----------------------------------
 FOOTER
+-----------------------------------
 */
 
 footer{
@@ -146,6 +190,7 @@ footer{
     position: sticky;
     bottom: 0;
     color: white;
+    background-color: #282828;
 }
 
 .footer-row{
@@ -268,9 +313,9 @@ DEBUG
     background-color: blueviolet;
 }
 
-.debug footer{
+/* .debug footer{
     background-color: blue;
-}
+} */
 
 /* .debug .central-main header nav ul li > a{
     color: black;
@@ -281,17 +326,6 @@ DEBUG
     border: 2px solid black;
     height: 150px;
 } */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -340,6 +374,52 @@ MEDIA QUERY da Desktop first
         width: calc(100% - 3.75rem);
     }
 
+    .logo-small{
+        display: block;
+    }
+
+    .logo-big{
+       display: none;
+    }
+
+    .name{
+        display: none;
+    }
+
+    .app{
+        display: none;
+    }
+    .download-section{
+        margin-top: 310px;
+    }
+
+    .playlist{
+        display: none;
+    }
+    .download-section img{
+        width: 60%;
+    }
+    
+    .profile img{
+        width: 50%;
+        background-color: #A3A3A3;
+        border-radius: 50%;
+    }
+    .download-section{
+        border-bottom: none;
+    }
+    .aside-up-link a{
+        display: none;
+    }
+
+    .aside-up-link img{
+        margin-top: 5px;
+        width: 60%;
+    }
+
+    .aside-up, .aside-down{
+        padding-left: 10px;
+    }
 }
 
 
