@@ -1,0 +1,24 @@
+.upgrade-section a:hover{
+    padding: 15px 25px;
+}
+
+
+.central-main header nav ul li > a:hover{
+    color: white;
+}
+
+aside a:hover{
+    color: white;
+}
+
+.footer-left a:hover{
+    text-decoration: underline;
+}
+
+.footer-left span > i:hover{
+    color: white;
+}
+
+.footer-central .fa-circle-play:hover{
+    font-size: 2.3em;
+}

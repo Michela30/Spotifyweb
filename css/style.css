@@ -1,6 +1,6 @@
 @import url(reset.css);
 @import url(general.css);
-
+@import url(animation.css);
 
 /*
 MAIN
@@ -17,6 +17,7 @@ aside{
     position: sticky;
     top: 0;
     color: white;
+    background-color: black;
 }
 .logo-small{
     display: none;
@@ -40,7 +41,7 @@ aside{
 
 .aside-up-link a{
     text-decoration: none;
-    color: white;
+    color: #A3A3A3;
     font-size: small;
 } 
 
@@ -50,7 +51,7 @@ aside{
 
 .playlist a{
     text-decoration: none;
-    color: white;
+    color: #A3A3A3;
     font-size: small;
 } 
 
@@ -84,7 +85,7 @@ aside{
 }
 
 .download-section a{
-    color: white;
+    color: #A3A3A3;
     text-decoration: none;
     font-size: small;
 }
@@ -139,15 +140,22 @@ hr{
 
 .central-main header nav ul li > a{
    text-decoration: none;
-   color: white;
+   color: #A3A3A3;
    text-transform: uppercase;
 }
 
+.layover{
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
 .music-container{
     display: flex;
     flex-wrap: wrap;
 }
 
+.music-box:hover .layover{
+    display: block;
+}
 .music-box{
     width: calc((100% / 6) - 1.25rem);
     margin: 0 .625rem;
@@ -176,7 +184,6 @@ hr{
 .title-section >*{
     padding: 5px 0;
 }
-
 
 
 /*
@@ -227,6 +234,7 @@ footer{
 
 .footer-left > span {
     padding-left: 2.1875rem;
+    color: #5A5A5A;
 }
 .footer-left > span > i {
     padding-right: .3125rem;
@@ -299,33 +307,33 @@ footer{
 /*
 DEBUG
 */
-/* .debug main .upgrade-section{
+.debug main .upgrade-section{
     background-color: brown;
     height: 60px;
     position: sticky;
     top: 0;
-} */
+}
 
-/* .debug .central-main{
+.debug .central-main{
     background-color: aquamarine;
-} */
+} 
 .debug aside{
     background-color: blueviolet;
 }
 
-/* .debug footer{
+ .debug footer{
     background-color: blue;
-} */
+} 
 
-/* .debug .central-main header nav ul li > a{
+ .debug .central-main header nav ul li > a{
     color: black;
- } */
-/*
+ } 
+
 .debug .music-box{
     background-color: coral;
     border: 2px solid black;
     height: 150px;
-} */
+} 
 
 
 
