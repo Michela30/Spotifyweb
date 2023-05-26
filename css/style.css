@@ -2,18 +2,20 @@
 @import url(general.css);
 
 
-/* 
+/*
 MAIN
 */
 
-/* 
+/*
 --------------------------------
 ASIDE
 --------------------------------
 */
-.container-flex{
-    display: flex;
-    justify-content: space-between;
+aside{
+    width: 12.5rem;
+    height: calc(100vh - 4.375rem);
+    position: sticky;
+    top: 0;
 }
 .logo-spotify img{
     width: 70%;
@@ -30,17 +32,10 @@ ASIDE
 .aside-up-link img,span{
     vertical-align: middle;
 }
-.playlist{
-    padding-bottom: 105px;
-}
+
 .playlist :not(i){
     padding-bottom: .625rem;
     padding-left: .9375rem;
-} 
-.section-aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .aside-down img{
@@ -53,10 +48,9 @@ ASIDE
 .download{
     padding-left: .625rem;
     padding-bottom: 0;
+    padding-top: 40px;
 }
-.profile .name{
-    display: inline-block;
-}
+
 
 .profile img{
     margin-left: .625rem;
@@ -75,13 +69,13 @@ ASIDE
 }
 
 
-/* 
+/*
 --------------------------------
 CENTRAL MAIN
 --------------------------------
 */
 .central-main {
-    width: 85%;
+    width: calc(100% - 12.5rem);
     background-color: #141922;
 }
 
@@ -90,27 +84,21 @@ CENTRAL MAIN
     height: 3.75rem;
     position: sticky;
     top: 0;
+    text-align: right;
 }
-
-.upgrade-section{
-    position: relative;
-    
+.upgrade-section > div{
+    padding-top: 1.25rem;
 }
-.upgrade-section a{
-    position: absolute;
-    top: .625rem;
-    right: .3125rem;
-}
-.central-main header nav {
+.central-main header nav ul {
     display: flex;
+    list-style: none;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .central-main header nav ul li{
-    display: inline-block;
-    list-style: none;
-    padding: .625rem .625rem;
+    padding: .9375rem .3125rem;
+    font-size: small;
 }
 
 .central-main header nav ul li > a{
@@ -122,16 +110,16 @@ CENTRAL MAIN
 .music-container{
     display: flex;
     flex-wrap: wrap;
-   
 }
 
 .music-box{
-    width: calc(85% / 6);
-    margin: .625rem .625rem;
+    width: calc((100% / 6) - 1.25rem);
+    margin: 0 .625rem;
 }
 
 .music-box img{
-    width: 100%
+    width: 100%;
+    display: block;
 }
 .circle-box{
     padding-bottom: 100px;
@@ -140,12 +128,12 @@ CENTRAL MAIN
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+    display: block;
 }
 
 
 .title-section{
-    margin: .625rem .625rem;
-    padding-top: 20px;
+    padding: 1.875rem .625rem;
     color: white;
 }
 
@@ -153,7 +141,7 @@ CENTRAL MAIN
     padding: 5px 0;
 }
 
-/* 
+/*
 FOOTER
 */
 
@@ -167,9 +155,12 @@ footer{
 .footer-row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
+
+.footer-section:nth-child(2n){
+    width: 50%;
+}
 
 .footer-img{
     margin: .625rem .625rem;
@@ -181,42 +172,63 @@ footer{
     width: 100%;
 }
 
-.footer-section > div{
-    display: inline-block;
+.footer-img , .footer-left, .footer-left-icon{
     vertical-align: middle;
+    display: inline-block;
 }
 
 .footer-left a{
     text-decoration: none;
     font-size: 0.5em;
-    color: white; 
+    color: white;
 }
 
-.footer-left h6,a{
+.footer-left>*{
    line-height: 0;
    padding-top: .625rem;
-   padding-right: 2.5rem;
-}
 
-.footer-section span{
-    padding-right: .625rem;
 }
-
-hr{
-    margin-top: 20px;
- 
+.footer-left-icon {
+    padding-left: 1.25rem;
+}
+.footer-left-icon >* {
+    padding-left: .3125rem;
 }
 
 .footer-central{
-    padding-top: .3125rem;
+    padding-top: .625rem;
+}
+
+.footer-central >*{
+    padding: 0 .625rem ;
+}
+
+.timeline {
+    display: flex;
+}
+
+.footer-timeline {
+    width: 80%;
+    height: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.central-grey{
+    background-color: #5A5A5A;  
+}
+
+.central-white{
+    background-color: white;  
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
 }
 
 
 
 
-
-
-/* 
+/*
 DEBUG
 */
 /* .debug main .upgrade-section{
@@ -231,12 +243,6 @@ DEBUG
 } */
 .debug aside{
     background-color: blueviolet;
-    width: 15%;
-    height: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    bottom: 0;
 }
 
 .debug footer{
@@ -246,7 +252,7 @@ DEBUG
 /* .debug .central-main header nav ul li > a{
     color: black;
  } */
-/* 
+/*
 .debug .music-box{
     background-color: coral;
     border: 2px solid black;
@@ -254,6 +260,27 @@ DEBUG
 } */
 
 
+.footer-timeline {
+    width: 80%;
+    height: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.central-grey{
+    background-color: #5A5A5A;  
+}
+
+.central-white{
+    background-color: white;  
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.timeline {
+    display: flex;
+}
 
 
 
@@ -268,9 +295,7 @@ DEBUG
 
 
 
-
-
-/* 
+/*
 MEDIA QUERY da Desktop first
 */
 
@@ -292,7 +317,15 @@ MEDIA QUERY da Desktop first
 
 /* Mobile piccolo */
 @media screen and (max-width: 600px){
-    
+
+    aside{
+        width: 3.75rem;
+    }
+
+    .central-main {
+        width: calc(100% - 3.75rem);
+    }
+
 }
 
 
