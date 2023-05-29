@@ -36,6 +36,11 @@ p{
 .fa-plus{
     background-color: #A3A3A3;
     color: black;
-    padding: .3125rem .3125rem;
+    padding: .3125rem;
     text-align: center;
+    font-size: 2em;
+}
+
+.playlist a i{
+    vertical-align: middle;
 }
